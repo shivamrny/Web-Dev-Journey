@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BoxModel </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: aquamarine;
+        }
+        .box1 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box; /*agar maine ye nahi lagaya to jo actual content h sirf uski height 200 px hogi naa ki pure box model ki */
+        }
+        .box2 {
+            color: green;
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid black;
+        }
+        /* margin collapse concept ye kehta hai ki agr do element ki margin collpase ho rhi h toh jo mazm margin hogi wo ek baar hi lgegi chahe wo upr wale box ki ho ya neeche wale ki */
+    </style>
+</head>
+<body>
+    <div class="box box1">I M the First Box</div>
+    <div class="box box2">I M the 2nd Box</div>
+</body>
+</html>

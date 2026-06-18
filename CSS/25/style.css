@@ -1,0 +1,7 @@
+nav ul li{
+    list-style:devanagari;
+    background-color: yellowgreen;
+    list-style-position: inside;
+    border: 2px solid black;
+    /* list-style-image: url("https://logosmarcas.net/wp-content/uploads/2020/03/LinkedIn-Emblema.png"); */
+}

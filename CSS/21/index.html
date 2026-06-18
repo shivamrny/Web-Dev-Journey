@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SPECIFICITY</title>
+    <style>
+        /* The Specificity of this tag is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* The Specificity of this tag is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* The Specificity of this tag is 10 */
+        .cyellow {
+            color: yellow;
+        }
+
+        /* The Specificity of this tag is 10 */
+        .cblue {
+            color: blue !important;
+        }
+
+        /* The Specificity of this tag is 10 and also this is an example of attribute selector  */
+        [data-x="a"] {
+            color: maroon;
+        }
+        div p:first-of-type{
+            color: blueviolet;
+        }
+        /* the specifity of the important tag is 10000 jiska example ham blue class me v dekh skte hai*/
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="cred cyellow cblue" data-x="a">This is an Example Paragraph.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis ratione earum pariatur fugit, nulla alias tempore reprehenderit sunt suscipit numquam voluptatum animi inventore atque corrupti deserunt soluta illum sequi!
+        Eum quibusdam, ducimus facere accusamus laudantium totam nesciunt pariatur exercitationem aliquid rem, explicabo, sint ad dolore commodi. Reiciendis consequatur doloremque eaque doloribus qui, impedit sunt dolore cum rem. Perferendis, necessitatibus?</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p> hii thjis is the second paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, saepe? Culpa, nobis.</p>
+    </div>
+</body>
+
+</html>

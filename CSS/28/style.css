@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    border: 2px solid black;
+    height: 130px;
+    width: 80vw;
+    padding: 3px;
+    margin: 3px;
+}
+
+.parent{
+    padding: 43px;
+    margin: 34px;
+    border: 3px solid purple;
+    /* position: absolute; */
+    /* transform/filter/perspective ye teeno se v ham positioned kara skte hai chahe bina positioned use kiye */
+    filter: invert(0);
+}
+/* isme jo box1 hai usko ghanta frk nhi pdta parents class se wo apna location dhudn lega jo instruction usse mila hoga jab absolute lag jaata hai tb */
+.box1{
+   background-color: aqua;
+   position: absolute;
+   top: 8px;
+   right: 50px;
+}
+.box2{
+  background-color: red;
+  /* position: relative;
+   left: 50px;
+   top: 30px; */
+}
+.box3{
+  background-color: purple;
+}
+.box4{
+  background-color: yellowgreen;
+}

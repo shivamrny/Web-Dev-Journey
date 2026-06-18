@@ -1,0 +1,24 @@
+/* Element Selector */
+div {
+    color: aqua;
+    background-color: bisque;
+}
+/* Class Selector */
+.red {
+    color: blue;
+    background-color: red;
+}
+/* ID Selector */
+#green {
+    color: green;
+}
+/* Child Selector */
+div>p {
+    /* ye agr div ke baad seedha p aayega tab hi lagega warna nahi lagega */
+    color: blue;
+    background-color: violet;
+}
+/* Descendant Selector iska mtlb div me kahi v p hoga toh ye property lag jaayega */
+/* div p {
+    color:aliceblue
+} */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            padding: 2px;
+            margin: 30px;
+            width: 15px;
+            height: 10px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+
+        .box1 {
+            border: 3px solid blue;
+            background-color: aquamarine;
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <!-- since div is a block element so ye hamesha hi ek new line lega chaher wo kitna v div likho ya kaisa v content hoga -->
+    <div class="box">
+        and a good box
+    </div>
+    <span>
+        I am a boy
+    </span>
+    <!-- since span is a inline element so it will  not go to another line til n span elements -->
+    <span>and i am also smart boy</span>
+</body>
+
+</html>
