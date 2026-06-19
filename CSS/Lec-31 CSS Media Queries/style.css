@@ -1,0 +1,11 @@
+/* A Syntax of Media Query is like*/
+/* @media not/only mediatype and (expressions) CSS Codes; */
+body{
+    background-color: red;
+}
+@media only screen and (max-width: 1020px){
+    body{
+        background-color: blueviolet;
+    }
+}
+/* ab ye jo condn laga h isse agar screen ka size 1020px tk ya usse chhota hoga toh apne aap bgcolor blue irrespective of jo upr red laga hua h example ke liye side panel me live preview aur chrome me kholke dekho */
