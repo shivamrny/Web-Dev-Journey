@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cards{
+    border: 2px solid black;
+    display: flow-root; /*isse jo overflowe ho rha tha box se wo ab nahi hoga box hi image ke hisaab se adjust ho jaayega */
+}
+.card{
+    border: 2px solid violet;
+}
+.card:nth-child(3) {
+    clear: left; /* Matlab yaha oe ye bol rha h ki mjhe mera left clear chahiey irrespective of upr neeche jo v ho*/
+    background-color: aqua;
+}
+img{
+    height: 250px;
+    float: left;
+}
