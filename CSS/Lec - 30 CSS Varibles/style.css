@@ -1,0 +1,32 @@
+:root{
+    --color:rgb(198, 127, 127);
+    --seccolor: rgb(150, 111, 111);
+
+}
+/* yaha hamne ek global variable declare kiya hai jo ki pure program ke kahi pe v call hoke follow ho skta hai */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+}
+/* Display flex krne se horizontal ho jaata hai vertical ki bajaye */
+ul li{
+   list-style: none;
+   padding: 34px;
+}
+ul li:first-child{
+    --color:rgb(127, 198, 132);
+    background-color: var(--color);
+}
+/* yaha pe hamne ek local variable declare kiya jis wajah se ye pahle apne ghar ki baat sunega i mean internal jo process hai usko dekh ke react krega */
+.nav{
+    background-color: var(--color);
+}
+/* jo variable global declare hua hai usko kahi pe v cal karne ka tareeka var() deke hi hai */
+.container{
+    background-color:var(--seccolor) ;
+}
+/* maanlo kahi pe hamne call kiya var() aur variable is not found aaye toh ham backuop me ek value rkh skte hai 
+eg var(--color , blue) */
